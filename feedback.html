@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link  rel="logo" type="image" a href="cropped_image.png">
+    <title >Rohit kumawat</title>
+    <meta name="viewport" content="device-width" initia-scale="1">
+    
+</head>
+<body style="background-image: url('feedback-bk.jpg');background-size: cover; @media(max-width : 600px) { width: 100%;}">
+    <img src="feedback logo.png" style="height: 100px;width: 100px; margin-left: 625px;" >
+    <h1 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">You can give your feedback here</h1>
+
+     <br>
+    <br>
+    <table>
+         <style>
+            th{
+                padding: 25px;
+            }
+         </style>
+        <tr>
+            <th><a href="my_website.html"> <img src="home.png" style="height: 40px;width: 40px; "></a></th>
+            <th style="text-align: center;"><a href="my_website.html">Home</a></th>
+            <th style="text-align: center;"><a href="contact.html">Contact</a></th>
+            <th style="text-align: center;"><a href="feedback.html">Feedback</a></th>
+            <th style="text-align: center;"><a href="sign_in.html">sign in</a></th>
+            <th style="text-align: center;"><a href="about.html">About us</a></th>
+        </tr>
+    </table>
+    <form>
+    <table>
+        <tr>
+            <th style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">•Name:</th>
+            <th><input type="text" placeholder="Enter your name" style="background-color: rgb(255, 255, 255); padding: 10px; font-weight: 750;"></th>
+        </tr>
+        <tr>
+            <th style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">•Mobile No.:</th>
+            <th><input type="text" placeholder="Enter your Mobile No." style="background-color: rgb(255, 255, 255); padding: 10px;font-weight: 750;"></th>
+        </tr>
+        <tr>
+            <th style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">•Email-ID:</th>
+            <th><input type="text" placeholder="Enter your Email-ID" style="background-color: rgb(255, 255, 255); padding: 10px;font-weight: 750;"></th>
+            
+        </tr>
+        <tr>
+            <th style="font-size: xx-large; font-family: Georgia, 'Times New Roman', Times, serif;">•Feedback:</th>
+            <th><textarea  placeholder="Enter your Feedback and thanks for visit" style="background-color: rgb(255, 255, 255);color: rgb(7, 1, 1); padding: 10px;font-weight: 750;"></textarea></th>
+        </tr>
+
+    </table>
+    <button id="btn" type="submit" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); margin-top:40px ; margin-bottom: 40px; padding: 10px; margin-left: 50px; margin-right: 50px;">Sumbit</button>
+    <button id="btn2" type="reset" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);  margin-top:40px ;  margin-bottom: 40px; padding: 10px; margin-left: 50px; margin-right: 50px;">Reset details</button>
+    <script>
+        document.getElementById('btn').addEventListener('click',function(){
+            alert('feedback sumbited');
+        })
+    </script>
+    <script>
+         document.getElementById('btn2').addEventListener('click',function(){
+            let response=confirm("are you sure you want to reset?");
+            if(response==true){
+                alert("item reset");
+            
+            }
+        });
+
+    </script>
+    </form>
+
+</body>
+
+</html>
